@@ -1,0 +1,80 @@
+body {
+    background-image: url(../img/bck.jpg);
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    margin-top: 150px;
+}
+
+.menu {
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li a {
+    display: block;
+    background-color: crimson;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(12, 1, 17);
+    text-transform: uppercase;
+    padding: 15px 30px 15px 40px;
+    transition: all .5s;
+}
+
+.menu ul li {
+    position: relative;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    min-width: 200px;
+}
+
+.menu ul li a i.fa {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    font-size: 24px;
+}
+
+.menu ul li:first-child {
+    border-left: 1px solid black;
+}
+
+.menu ul li:last-child {
+    border-right: 1px solid black;
+}
+
+.menu li a:hover {
+    background: #454547;
+    color: white;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all .5s;
+}
+
+.menu li ul {
+    position: absolute;
+    display: none;
+    padding: 0px;
+}
+
+.menu li ul li {
+    border: 1px solid black;
+}
+
+.menu li ul li a {
+    padding: 10px;
+    text-transform: none;
+}
+
+.menu li:hover>ul {
+    display: block;
+}
