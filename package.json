@@ -1,21 +1,21 @@
 {
-  "name": "homework1",
+  "name": "or",
   "version": "1.0.0",
-  "description": "",
-  "author": "",
-  "license": "ISC",
-  "scripts": {
-    "start": "gulp start"
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.5",
-    "gulp": "^4.0.2",
-    "gulp-clean": "^0.4.0",
-    "gulp-cli": "^2.2.0",
-    "gulp-file-include": "^2.0.1",
-    "gulp-if": "^2.0.2",
-    "gulp-plumber": "^1.2.1",
+    "browser-sync": "^2.26.7",
+    "gulp-livereload": "^4.0.1",
     "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5"
-  }
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-watch": "^5.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
