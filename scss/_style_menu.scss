@@ -1,0 +1,24 @@
+.header__inner_menu {
+    li {
+        display: inline-flex;
+        justify-content: space-between;
+        a {
+            text-decoration: none;
+            padding-top: 55px;
+            color: grey;
+            padding-left: 30px;
+            position: relative;
+            font-size: 22px;
+            line-height: 26px;
+            font-family: calibri, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            &.header__inner_menu-home:before {
+                content: "\f015";
+                font-family: 'icomoon' !important;
+                position: absolute;
+                left: 36px;
+                top: 17px;
+                font-size: 40px;
+            }
+        }
+    }
+}

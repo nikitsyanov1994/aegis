@@ -1,0 +1,10 @@
+@import 'style_body';
+@import 'style_container';
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7px;
+    padding-bottom: 18px;
+}
+
+@import 'style_menu';
