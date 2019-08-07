@@ -1,0 +1,290 @@
+@font-face {
+  font-family: "BebasRegular";
+  src: url("/fonts/BebasRegular/BebasRegular.ttf"); }
+
+@font-face {
+  font-family: "BebasBold";
+  src: url("/fonts/BebasBold/BebasBold.ttf", bold); }
+
+@font-face {
+  font-family: "StMarieThin";
+  src: url("/fonts/StMarieThin/StMarie-Thin.otf"); }
+
+@font-face {
+  font-family: "CalibriRegular";
+  src: url("/fonts/CalibriRegular/Calibri.ttf"); }
+
+@font-face {
+  font-family: "CalibriLight";
+  src: url("/fonts/CalibriLight/CalibriLight.ttf"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.container {
+  max-width: 1202px;
+  margin: 0 auto; }
+
+.header {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1; }
+  .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-left: 18px;
+    min-height: 128px; }
+    .header__wrapper .icon {
+      padding-top: 16px; }
+      .header__wrapper .icon li {
+        display: inline-flex;
+        justify-content: space-between;
+        background-image: url("../img/icon/icons.png");
+        background-repeat: no-repeat;
+        width: 48px;
+        height: 48px;
+        margin-left: 50px;
+        padding-top: 58px;
+        padding-right: 71px; }
+      .header__wrapper .icon-home {
+        background-position: 0px 0px; }
+      .header__wrapper .icon-about {
+        background-position: -124px 0px; }
+      .header__wrapper .icon-work {
+        background-position: -250px 0px; }
+      .header__wrapper .icon-blog {
+        background-position: -373px 0px; }
+      .header__wrapper .icon-contact {
+        background-position: -500px 0px; }
+      .header__wrapper .icon a {
+        text-decoration: none;
+        color: #cccccc;
+        font-family: "CalibriRegular";
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        font-weight: 500; }
+        .header__wrapper .icon a:hover {
+          background: #666666;
+          color: #666666;
+          transition: 0.9s; }
+
+.slider {
+  margin-top: 128px;
+  background-image: url("/img/big-orange-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 4px solid #ff9900;
+  border-bottom: 4px solid #ff9900; }
+  .slider__wrapper {
+    position: relative;
+    min-height: 403px; }
+    .slider__wrapper__items {
+      position: absolute;
+      padding-top: 129px;
+      padding-left: 22px;
+      width: 395px;
+      height: 174px; }
+      .slider__wrapper__items_rab {
+        position: absolute; }
+        .slider__wrapper__items_rab a {
+          text-decoration: none;
+          font-size: 51px;
+          font-family: "BebasRegular";
+          color: #ff9900;
+          line-height: 27px;
+          letter-spacing: 0px;
+          text-decoration: none;
+          white-space: nowrap;
+          font-weight: 700;
+          width: 378px;
+          height: 64px;
+          border: solid 0px;
+          background-color: #000000;
+          opacity: 0.69;
+          position: absolute;
+          padding: 15px 13px 13px 30px; }
+          .slider__wrapper__items_rab a:hover {
+            color: #000000;
+            position: absolute;
+            transform: scale(1.03);
+            background-color: #ff9900;
+            transition: 0.7s; }
+      .slider__wrapper__items_or {
+        position: absolute;
+        margin-top: 94px; }
+        .slider__wrapper__items_or a {
+          text-decoration: none;
+          font-size: 51px;
+          font-family: "BebasRegular";
+          color: #ff9900;
+          line-height: 27px;
+          letter-spacing: 0px;
+          text-decoration: none;
+          white-space: nowrap;
+          font-weight: 700;
+          width: 378px;
+          height: 64px;
+          border: solid 0px;
+          background-color: #000000;
+          opacity: 0.69;
+          position: absolute;
+          padding: 15px 13px 13px 30px; }
+          .slider__wrapper__items_or a:hover {
+            color: #000000;
+            position: absolute;
+            transform: scale(1.03);
+            background-color: #ff9900;
+            transition: 0.7s; }
+
+.pages__inner {
+  border-bottom: solid 1px #f2f2f2;
+  box-shadow: 10px 5px  #f2f2f2; }
+  .pages__inner .pages__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px; }
+    .pages__inner .pages__wrapper__cl1, .pages__inner .pages__wrapper__cl2, .pages__inner .pages__wrapper__cl3, .pages__inner .pages__wrapper__cl4 {
+      max-width: 300px;
+      min-height: 168px;
+      margin-right: 32px;
+      text-align: justify;
+      overflow: hidden;
+      position: relative; }
+
+.page__card .page-card__text,
+.page__card .page-card__link {
+  font-family: "CalibriLight";
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: 0px;
+  color: #000000;
+  font-weight: 900; }
+  .page__card .page-card__text a,
+  .page__card .page-card__link a {
+    text-decoration: none;
+    color: #ff9900;
+    font-style: italic;
+    position: absolute;
+    right: 0px; }
+
+.infoteam__wrapper__header {
+  text-align: center;
+  padding: 25px 0px 43px 0px;
+  color: #ff9900;
+  text-decoration: underline;
+  font-family: "StMarieThin";
+  font-size: 40px;
+  line-height: 23px;
+  letter-spacing: 0; }
+
+.infoteam__wrapper__items {
+  display: flex;
+  justify-content: space-between; }
+
+.infoteam-card {
+  padding-right: 133px; }
+  .infoteam-card__header {
+    text-align: center;
+    padding-bottom: 30px; }
+  .infoteam-card__name, .infoteam-card__position {
+    font-family: "CalibriLight";
+    font-size: 22px;
+    line-height: 23px;
+    letter-spacing: 0px;
+    font-weight: bold;
+    color: #666666; }
+  .infoteam-card__position {
+    color: #ff9900; }
+  .infoteam-card__description {
+    margin-left: 33px;
+    text-align: justify;
+    padding: 20px 0 14px;
+    font-family: "CalibriLight";
+    font-size: 15px;
+    line-height: 23px;
+    letter-spacing: 0px;
+    word-wrap: none;
+    color: #000000; }
+
+.form__wrapper {
+  min-height: 475px; }
+  .form__wrapper .form__heading {
+    text-align: center;
+    padding: 25px 0px 70px 0px;
+    color: #ff9900;
+    text-decoration: underline;
+    font-family: "StMarieThin";
+    font-size: 40px;
+    line-height: 23px;
+    letter-spacing: 0; }
+  .form__wrapper .form__box__inner {
+    font-family: "StMarieThin";
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0;
+    position: relative; }
+    .form__wrapper .form__box__inner label,
+    .form__wrapper .form__box__inner input,
+    .form__wrapper .form__box__inner textarea {
+      display: flex;
+      outline: none;
+      border: none; }
+    .form__wrapper .form__box__inner label {
+      color: #ff9900; }
+    .form__wrapper .form__box__inner .name {
+      margin-left: 53px; }
+    .form__wrapper .form__box__inner .email {
+      margin-left: 57px; }
+    .form__wrapper .form__box__inner input {
+      margin-left: 35px;
+      margin-bottom: 37px;
+      width: 100%;
+      height: 30px;
+      box-shadow: -5px -2px 0px rgba(0, 0, 0, 0.15);
+      line-height: 30px;
+      text-align: left; }
+    .form__wrapper .form__box__inner textarea {
+      height: 86px;
+      margin-left: 25px;
+      width: 100%;
+      resize: none;
+      box-shadow: -5px -2px 0px rgba(0, 0, 0, 0.15); }
+  .form__wrapper .default__btn {
+    position: absolute;
+    right: 0px;
+    margin: 30px 30px 44px 0px;
+    width: 175px;
+    height: 46px;
+    background-color: #ff9900;
+    color: white;
+    font-family: "StMarieThin";
+    font-size: 30px;
+    line-height: 23px;
+    letter-spacing: 0;
+    outline: none; }
+
+.footer {
+  background-color: #ff9900;
+  min-height: 70px; }
+  .footer__wrapper {
+    padding-top: 23px;
+    font-family: "StMarieThin";
+    color: white;
+    font-size: 33px;
+    line-height: 23px;
+    text-align: center; }
+
+/*# sourceMappingURL=maps/main.css.map */

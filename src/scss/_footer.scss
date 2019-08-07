@@ -1,0 +1,12 @@
+.footer {
+  background-color: $coltextslider;
+  min-height: 70px;
+  &__wrapper {
+    padding-top: 23px;
+    font-family: $fontheaders;
+    color: white;
+    font-size: 33px;
+    line-height: 23px;
+    text-align: center;
+  }
+}

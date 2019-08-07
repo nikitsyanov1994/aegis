@@ -1,0 +1,16 @@
+.infoteam__wrapper {
+  &__header {
+    text-align: center;
+    padding: 25px 0px 43px 0px;
+    color: $coltextslider;
+    text-decoration: underline;
+    font-family: $fontheaders;
+    font-size: 40px;
+    line-height: 23px;
+    letter-spacing: 0;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+}
