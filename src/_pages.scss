@@ -1,0 +1,30 @@
+.pages__inner {
+    border-bottom: solid 1px #f2f2f2 ;
+    box-shadow:10px 5px  #f2f2f2;
+   
+
+.pages__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px ;
+    
+    
+    &__cl1,
+    &__cl2,
+    &__cl3,
+    &__cl4 {
+        max-width: 300px;
+        min-height: 168px;;
+        margin-right: 32px;
+        text-align: justify;
+        overflow: hidden;
+        position: relative;
+        
+        }  
+}
+
+}
+    
+
+    
+
