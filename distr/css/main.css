@@ -180,7 +180,7 @@
     position: absolute;
     right: 0px; }
 
-.infoteam__wrapper .infoteam__wrapper__header {
+.infoteam__wrapper__header {
   text-align: center;
   padding: 25px 0px 43px 0px;
   color: #ff9900;
@@ -190,7 +190,7 @@
   line-height: 23px;
   letter-spacing: 0; }
 
-.infoteam__wrapper .infoteam__wrapper__items {
+.infoteam__wrapper__items {
   display: flex;
   justify-content: space-between; }
 

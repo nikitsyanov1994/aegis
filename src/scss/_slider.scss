@@ -1,0 +1,77 @@
+.slider {
+    margin-top: 128px;
+    background-image: url("/img/big-orange-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 4px solid $coltextslider;
+    border-bottom: 4px solid $coltextslider;
+    &__wrapper {
+      position: relative;
+      min-height: 403px;
+      &__items {
+        position: absolute;
+        padding-top: 129px;
+        padding-left: 22px;
+        width: 395px;
+        height: 174px;
+        &_rab {
+          position: absolute;
+          a {
+            text-decoration: none;
+            font-size: 51px;
+            font-family: $fontslider;
+            color:$coltextslider;
+            line-height: 27px;
+            letter-spacing: 0px;
+            text-decoration: none;
+            white-space: nowrap;
+            font-weight: 700;
+            width: 378px;
+            height: 64px;
+            border: solid 0px;
+            background-color: $artcol;
+            opacity: 0.69;
+            position: absolute;
+            padding: 15px 13px 13px 30px;
+            &:hover {
+              color: $artcol;
+              position: absolute;
+              transform: scale(1.03);
+              background-color: $coltextslider;
+              transition: 0.7s;
+            }
+          }
+        }
+        &_or {
+          position: absolute;
+          margin-top: 94px;
+          a {
+            text-decoration: none;
+            font-size: 51px;
+            font-family:$fontslider;
+            color: $coltextslider;
+            line-height: 27px;
+            letter-spacing: 0px;
+            text-decoration: none;
+            white-space: nowrap;
+            font-weight: 700;
+            width: 378px;
+            height: 64px;
+            border: solid 0px;
+            background-color:$artcol;
+            opacity: 0.69;
+            position: absolute;
+            padding: 15px 13px 13px 30px;
+            &:hover {
+              color: $artcol;
+              position: absolute;
+              transform: scale(1.03);
+              background-color: $coltextslider;
+              transition: 0.7s;
+            }
+          }
+        }
+      }
+    }
+  }
