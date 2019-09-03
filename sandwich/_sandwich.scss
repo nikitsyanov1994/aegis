@@ -1,0 +1,349 @@
+.sandwich__top {
+  text-align: center;
+
+  .heading {
+    font-family: $fontheadinsbold;
+    font-weight: bold;
+    font-size: 42px;
+    letter-spacing: normal;
+    line-height: 30px;
+    color: $btncolorgradone;
+    padding-bottom: 10px;
+  }
+  .subheading {
+    font-family: $fontheadinsbold;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+    color: #a47d5e;
+    padding-bottom: 10px;
+  }
+}
+
+.sandwich__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &_left {
+    margin-top: -30px;
+    text-align: center;
+    padding-right: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 750px;
+    &-first {
+      padding-bottom: 50px;
+
+      .first {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #996666;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+      .tittle {
+        font-family: $fontheadinsbold;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: 0.25;
+        color: #a47d5e;
+        padding: 20px 0;
+        
+      }
+      .text {
+        font-family: $fontaccenttext;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1;
+        color: $textcolor;
+      }
+    }
+    &-second {
+      padding-bottom: 50px;
+      .second {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #996666;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+      .tittle {
+        font-family: $fontheadinsbold;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: 0.25;
+        color: #a47d5e;
+        padding: 20px 0;
+      }
+      .text {
+        font-family: $fontaccenttext;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1;
+        color: $textcolor;
+      }
+    }
+    &-second {
+      .tittle {
+        font-family: $fontheadinsbold;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: 0.25;
+        color: #a47d5e;
+        padding: 20px 0;
+      }
+      .text {
+        font-family: $fontaccenttext;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1;
+        color: $textcolor;
+      }
+    }
+    &-thirst {
+  
+      .thrist {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #996666;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+      .tittle {
+        font-family: $fontheadinsbold;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: 0.25;
+        color: #a47d5e;
+        padding: 20px 0;
+      }
+      .text {
+        font-family: $fontaccenttext;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1;
+        color: $textcolor;
+      }
+    }
+  }
+}
+.sandwich__bottom-right {
+
+  &-backgrd {
+    position: relative;
+    
+    .recipe {
+      width: 170px;
+      min-height: 60px;
+      position: absolute;
+      font-family: $fontheadinsbold;
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 100%;
+      background-color: white;
+      bottom: -17px;
+      left: -21px;
+      color: #ead9b6;
+      text-align: center;
+      border-style: dashed;
+      display: flex;
+      flex-direction: column;
+     justify-content: center;
+    }
+  }
+  .elemnts {
+    top: -577px;
+    left: -10px;
+    
+    position: relative;
+
+    .sandwich__bottom-right-top {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: white;
+    opacity: 0.8;
+    min-width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &:hover {
+      opacity: 1;
+      content: none;
+      background-image: url(../../img/Vektor-Smartobjekt.png);
+      transition: 0.5s;
+      cursor: pointer;
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+    }
+    .text_top {
+      color: #a47d5e;
+      font-family: "AlegriaBold";
+      font-weight: bold;
+      line-height: 30px;
+      letter-spacing: 0.1px;
+      font-size: 18px;
+      text-align: center;
+  
+      
+    }
+    .count_top {
+      color: #56534c;
+      font-family: $fontheadinsbold;
+      font-weight: bold;
+      text-align: center;
+      line-height: 100%;
+      letter-spacing: 0.1px;
+      font-size: 54px;
+      &:hover {
+        color: #dfc691;
+        transform: scale(1.2);
+        transition: 0.5s;
+      }
+    }
+    .mins_top {
+      color: $accentcolor;
+      font-family: $fontheadinsbold;
+      font-weight: bold;
+      text-align: center;
+      line-height: 30px;
+      letter-spacing: 0.1px;
+      font-size: 14px;
+      &:hover {
+        color: $accentcolor;
+      }
+    }
+  }
+  .sandwich__bottom-right-mid {
+    position: absolute;
+    right: 0;
+    top: 201px;
+    background-color: white;
+    opacity: 0.8;
+    min-width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &:hover {
+      opacity: 1;
+      content: none;
+      background-image: url(../../img/Vektor-Smartobjekt.png);
+      transition: 0.5s;
+      cursor: pointer;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .text_mid {
+      color: #a47d5e;
+      font-family: "AlegriaBold";
+      font-weight: bold;
+      line-height: 30px;
+      letter-spacing: 0.1px;
+      font-size: 18px;
+      text-align: center;
+
+    }
+    .count_mid {
+      color: #56534c;
+      font-family: $fontheadinsbold;
+      font-weight: bold;
+      text-align: center;
+      line-height: 100%;
+      letter-spacing: 0.1px;
+      font-size: 54px;
+      &:hover {
+        color: #dfc691;
+        transform: scale(1.2);
+        transition: 0.5s;
+      }
+    }
+    .mins_mid {
+      color: $accentcolor;
+      font-family: $fontheadinsbold;
+      font-weight: bold;
+      text-align: center;
+      line-height: 30px;
+      letter-spacing: 0.1px;
+      font-size: 14px;
+      &:hover {
+        color: $accentcolor;
+      }
+    }
+  }
+  .sandwich__bottom-right-bot {
+    position: absolute;
+    right: 0;
+    top: 402px;
+    background-color: white;
+    opacity: 0.8;
+    min-width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &:hover {
+      opacity: 1;
+      content: none;
+      background-image: url(../../img/Vektor-Smartobjekt.png);
+      transition: 0.5s;
+      cursor: pointer;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .text_bot {
+      color: #a47d5e;
+      font-family: "AlegriaBold";
+      font-weight: bold;
+      line-height: 30px;
+      letter-spacing: 0.1px;
+      font-size: 18px;
+      text-align: center;
+  
+    }
+    .count_bot {
+      color: #56534c;
+      font-family: $fontheadinsbold;
+      font-weight: bold;
+      text-align: center;
+      line-height: 100%;
+      letter-spacing: 0.1px;
+      font-size: 54px;
+      &:hover {
+        color: #dfc691;
+        transform: scale(1.2);
+        transition: 0.5s;
+      }
+    }
+    .mins_bot {
+      color: $accentcolor;
+      font-family: $fontheadinsbold;
+      font-weight: bold;
+      text-align: center;
+      line-height: 30px;
+      letter-spacing: 0.1px;
+      font-size: 14px;
+      &:hover {
+        color: $accentcolor;
+      }
+    }
+  }
+}
+}

@@ -1,0 +1,139 @@
+.header__wrap {
+  min-height: 100%;
+  z-index: 90;
+}
+
+.header__top-wrap {
+  background-color: rgba(86, 84, 78, 0.529);
+  min-height: 70px;
+  width: 100%;
+  display: inline-block;
+  z-index: 100;
+  position: fixed;
+  margin: 0 auto;
+  top: 0;
+  
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  min-height: 70px;
+  max-width: 1260px;
+  margin: 0 auto;
+
+  &__logo {
+    a {
+      line-height: 24px;
+      font-family: $fontlogo;
+      font-size: 30px;
+      letter-spacing: 9px;
+      color: $menuitemscolor;
+      text-decoration: none;
+    }
+  }
+
+  &__menu {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      li {
+        position: relative;
+        list-style: none;
+        padding-right: 85px;
+        text-align: center;
+        &:first-child,
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+          &::after {
+            position: absolute;
+            content: "~";
+            align-items: center;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 4.2px;
+            top: 0px;
+            right: 37px;
+            color: $menuitemscolor;
+            font-family: $fontheadings;
+          }
+        }
+
+        a {
+          color: $menuitemscolor;
+          text-decoration: none;
+          font-family: $fontheadings;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 4.2px;
+          align-items: center;
+          &:hover {
+            border-bottom: solid 4px $accentcolor;
+          }
+        }
+      }
+    }
+  }
+  &__items {
+    
+    .icon-twitter {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "\e902";
+        font-family: "icomoon";
+        color: white;
+        font-size: 14px;
+        line-height: 24px;
+        top: -11px;
+        right: 78px;
+      }
+      &:hover:before {
+        transition: 0.9s;
+
+        transform: scale(1.2);
+      }
+    }
+    .icon-facebook {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "\e901";
+        font-family: "icomoon";
+        color: white;
+        font-size: 14px;
+        line-height: 24px;
+        top: -11px;
+        right: 42px;
+      }
+      &:hover:before {
+        transition: 0.9s;
+        transform: scale(1.2);
+      }
+    }
+
+    .icon-instagram {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "\e900";
+        font-family: "icomoon";
+        color: white;
+        font-size: 14px;
+        line-height: 24px;
+        top: -11px;
+        right: 0px;
+      }
+      &:hover:before {
+        transition: 0.9s;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
