@@ -1,13 +1,141 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link> rel="stylesheet"href="./css/main.css"</link>
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./font.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Pastry with love</title>
 </head>
+
 <body>
-    hello world
+    <!-- header input vars of html -->  
+    <header class="header">
+         
+        @@include('./partials/header/_header-top.html', {
+            "pastlogoname":"Gustoso",
+            "pastfirst":"WELCOME",
+            "pastsecond":"MENU",
+            "pastthirst":"RESEVRATION",
+            "pastfourth":"NEWS",
+            "pastfifth":"CONTACT",
+            "pastelinktwitter":"http://twitter.com",
+            "pastelinkfacebook":"http://facebook.com",
+            "paselinkinstagram":"http://instagram.com"
+           
+        })
+        <div class="container">
+        @@include('./partials/header/_header-bottom.html', {
+        "pasteheading":"Pastry with love",
+        "pastimgline":"./img/dashed line.png",
+        "pastbottomtext":"We’re bringing you fresh ingredients every day in ways you can’t resist.",
+        "pastetextbutton":"OUR MENU"
+        })
+    </div>
+    </header>
+
+    <section class="cakes">
+        
+        <div class="container">
+                @@include('./partials/section-cakes/_section-cakes.html', {
+                    "headingName":"Art of cakes",
+                    "subheadingName":"WE CREATE DELICIOUS MEMORIES",
+                    "textContent":"Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed.",
+                    "textPos":"Chef Cook",
+                    "textFirstname":"Benito",
+                    "pathUserImg":"./img/chief_cooker.jpg",
+                    "textSecondname":"Gaspare",
+                    "pathQouteImg":"./img/buity_text.png",
+                    "pathFlourImg":"./img/muka.jpg",
+                    "pathEgsImg":"./img/eggs.jpg",
+                    "pathChocolateImg":"./img/cake.jpg",
+                    "pathStrawberryImg":"./img/strasberry.jpg",
+                    "pathImglabel":"./img/straform.png",
+                    "pathtextlabel":"TATSES SO GOOD!"
+                    
+                })
+        
+        </div>
+    </section>
+
+    <section class="slider">
+        <div class="container">
+            @@include('./partials/slider/_slider.html', {
+                "pathImgphot":"./img/blini.jpg",
+                "pathTittle":"Tasty pancakes",
+                "pathSubtittle":"SEASON FAVORITE",
+                "pathText":"Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.",
+                "pathImgsl1":"./img/sl1.png",
+                "pathImgsl2":"./img/sl2.png",
+                "pathImgsl3":"./img/sl3.png",
+                "pathbackImg":"./img/bckgmelniza.png",
+                "pathreadyImg":"./img/Vektor-Smartobjekt.png",
+                "pathreadyText":"READY IN",
+                "pathreadyCount":"40",
+                "pathreadyMins":"mins"
+
+
+            })
+        </div>
+    </section>
+
+    <section class="sandwich">
+        <div class="container">
+            <div class="sandwich__wrapper">
+                    @@include('./partials/sandwich/_sandwich.html', {
+                        "pathheading": "The Jibarito sandwich",
+                        "pathsubheading":"THE BEST SANDWICH YOU'VE EVER TASTED!",
+                        "pathImgfirst":"./img/circlezerno.png",
+                        "pathTittlefirst":"Class aptent",
+                        "pathTextfirst":"Quot alienum persecuti ut eam, nam ad atqui primis nusquam.",
+                        "pathImgsecond":"./img/circleggs.png",
+                        "pathTittlesecond":"Nulla eget",
+                        "pathTextsecond":"Nullam dictum felis eu pede mollis pretium Integer tincidunt.",
+                        "pathImgthirst":"./img/circleholodec.png",
+                        "pathTittlethirst":"Sed nibh purus",
+                        "pathTextthirst":" Aenean eleifend tellus leo ligula, porttitor eu, consequat vitae.",
+                        "pastImgback":"./img/ebu4eemyaso.png",
+                        "pathreadyText_top":"PREP",
+                        "pathreadyCount_top":"15",
+                        "pathreadyMins_top":"mins",
+                        "pathreadyText_mid":"COOK",
+                        "pathreadyCount_mid":"35",
+                        "pathreadyMins_mid":"mins",
+                        "pathreadyText_bot":"READY IN",
+                        "pathreadyCount_bot":"50",
+                        "pathreadyMins_bot":"mins"
+        
+        
+                    })
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+                @@include('./partials/footer/_footer.html', {
+                    "pathourmenu":"OUR MENU",
+                    "pathgallery":"GALLERY",
+                    "pathculture":"CULTURE",
+                    "pastlogomame":"Gustoso",
+                    "pathevents":"EVENTS",
+                    "pathcatering":"CATERING",
+                    "pathvisitus":"VISIT US"
+    
+    
+                })
+        </div>
+    </footer>
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+
+
+
 </body>
+
 </html>

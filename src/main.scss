@@ -1,2 +1,96 @@
-*(
-    outline:  lpx solid red;)
+@import "../src/scss/normalize";
+@import "../src/scss/fonts";
+@import "../src/scss/vars";
+@import "../src/scss/icons";
+@import "../src/partials/header/header__top";
+@import "../src/partials/header/header__bottom";
+@import "../src/partials/section-cakes/section-cakes";
+@import "../src/partials/slider/slider";
+@import "../src/scss/slick";
+@import "../src/partials/sandwich/sandwich";
+@import "../src/partials/footer/footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $fontaccenttext;
+  font-size: 24px;
+  line-height: 16px;
+  letter-spacing: 0.1;
+  color: $textcolor;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+.header {
+  background-color: $accentcolor;
+  min-height: 900px;
+  background-image: url(../img/bckdheader.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 30;
+   
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background-image: url(../img/shadow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+    bottom: -46px;
+    left:47%;
+    background-image: url("../img/border_bread.png");
+    z-index: 11;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.cakes {
+  background-image: url("../img/bgcake.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 100px 10px 100px 67px;
+  background-attachment: fixed;
+  position: relative;
+  border-top: solid 10px white;
+  
+  
+}
+
+.slider {
+  background-image: url("../img/bckd__sectionnext.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 142px 200px 107px 96px;
+  background-attachment: fixed;
+}
+
+.sandwich {
+  padding: 90px 0 113px 0;
+  background-color: #f3f1e9;
+  background-attachment: fixed;
+}
+.footer {
+  background-color: #f3f1e9;
+}
+
+@import "../src/scss/media";

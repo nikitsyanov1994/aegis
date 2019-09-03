@@ -1,0 +1,414 @@
+<section class="cakes">
+        
+    <div class="container">
+            @@include('./partials/section-cakes/_section-cakes.html', {
+                "headingName":"Art of cakes",
+                "subheadingName":"WE CREATE DELICIOUS MEMORIES",
+                "textContent":"Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed.",
+                "textPos":"Chef Cook",
+                "textFirstname":"Benito",
+                "pathUserImg":"./img/chief_cooker.jpg",
+                "textSecondname":"Gaspare",
+                "pathQouteImg":"./img/buity_text.png",
+                "pathFlourImg":"./img/muka.jpg",
+                "pathEgsImg":"./img/eggs.jpg",
+                "pathChocolateImg":"./img/cake.jpg",
+                "pathStrawberryImg":"./img/strasberry.jpg",
+                "pathImglabel":"./img/straform.png",
+                "pathtextlabel":"TATSES SO GOOD!"
+                
+            })
+    
+    </div>
+</section>
+
+<section class="slider">
+    <div class="container">
+        @@include('./partials/slider/_slider.html', {
+            "pathImgphot":"./img/blini.jpg",
+            "pathTittle":"Tasty pancakes",
+            "pathSubtittle":"SEASON FAVORITE",
+            "pathText":"Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.",
+            "pathImgsl1":"./img/sl1.png",
+            "pathImgsl2":"./img/sl2.png",
+            "pathImgsl3":"./img/sl3.png",
+            "pathbackImg":"./img/bckgmelniza.png",
+            "pathreadyImg":"./img/Vektor-Smartobjekt.png",
+            "pathreadyText":"READY IN",
+            "pathreadyCount":"40",
+            "pathreadyMins":"mins"
+
+
+        })
+    </div>
+</section>
+
+<section class="sandwich">
+    <div class="container">
+        <div class="sandwich__wrapper">
+                @@include('./partials/sandwich/_sandwich.html', {
+                    "pathheading": "The Jibarito sandwich",
+                    "pathsubheading":"THE BEST SANDWICH YOU'VE EVER TASTED!",
+                    "pathImgfirst":"./img/circlezerno.png",
+                    "pathTittlefirst":"Class aptent",
+                    "pathTextfirst":"Quot alienum persecuti ut eam, nam ad atqui primis nusquam.",
+                    "pathImgsecond":"./img/circleggs.png",
+                    "pathTittlesecond":"Nulla eget",
+                    "pathTextsecond":"Nullam dictum felis eu pede mollis pretium Integer tincidunt.",
+                    "pathImgthirst":"./img/circleholodec.png",
+                    "pathTittlethirst":"Sed nibh purus",
+                    "pathTextthirst":" Aenean eleifend tellus leo ligula, porttitor eu, consequat vitae.",
+                    "pastImgback":"./img/ebu4eemyaso.png",
+                    "pathreadyText_top":"PREP",
+                    "pathreadyCount_top":"15",
+                    "pathreadyMins_top":"mins",
+                    "pathreadyText_mid":"COOK",
+                    "pathreadyCount_mid":"35",
+                    "pathreadyMins_mid":"mins",
+                    "pathreadyText_bot":"READY IN",
+                    "pathreadyCount_bot":"50",
+                    "pathreadyMins_bot":"mins"
+    
+    
+                })
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+            @@include('./partials/footer/_footer.html', {
+                "pathourmenu":"OUR MENU",
+                "pathgallery":"GALLERY",
+                "pathculture":"CULTURE",
+                "pastlogomame":"Gustoso",
+                "pathevents":"EVENTS",
+                "pathcatering":"CATERING",
+                "pathvisitus":"VISIT US"
+
+
+            })
+    </div>
+</footer>
+
+@media only screen and (max-width: 1300) {
+    .header__top {
+      &__logo {
+        a {
+          font-size: 20px;
+        }
+      }
+  
+      &__menu {
+        ul {
+          li {
+            padding-right: 40px;
+  
+            &:first-child,
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+              &::after {
+                right: 15px;
+                font-size: 10px;
+              }
+            }
+  
+            a {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+      &__items {
+        .icon-twitter {
+          &::before {
+            font-size: 10px;
+  
+            right: 78px;
+          }
+        }
+        .icon-facebook {
+          &::before {
+            font-size: 10px;
+  
+            right: 42px;
+          }
+        }
+  
+        .icon-instagram {
+          &::before {
+            font-size: 10px;
+  
+            right: 0px;
+          }
+        }
+      }
+    }
+    .cakes__left-wrap {
+      //   width: 130px;
+  //  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+  .cakes__left {
+      padding: 0;
+      margin-bottom: 50px;
+      &-heading {
+      
+        h2 {
+          font-family: $fontheadinsbold;
+          font-size: 54px;
+          line-height: 30px;
+          letter-spacing: 0.1px;
+          color: $btncolorgradone;
+        }
+      }
+      &-subheading {
+        padding-bottom: 65px;
+        p {
+          font-family: $fontheadinsbold;
+          font-size: 16px;
+          line-height: 30px;
+          letter-spacing: 0.1px;
+          color: #996666;
+          font-weight: bold;
+          text-align: center;
+          word-wrap: break-word;
+        }
+      }
+      &-content {
+        padding-bottom: 40px;
+        p {
+          font-family: fontaccenttext;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 0.9px;
+          color: $btncolorgradone;
+        }
+      }
+      &-infoteam {
+        padding-bottom: 40px;
+        p {
+          padding-bottom: 45px;
+          font-family: $fontheadinsbold;
+          color: $btncolorgradone;
+          font-size: 24px;
+          line-height: 30px;
+          letter-spacing: 0.25px;
+          font-weight: bold;
+        }
+      }
+      &-description {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        &-img {
+          padding: 0px 20px;
+        }
+        p {
+          font-family: $fontheadings;
+          font-size: 24px;
+          line-height: 100%;
+          letter-spacing: 0.25px;
+          font-weight: 100;
+          width: 110px;
+          border-top: solid 1px $accentcolor;
+          border-bottom: solid 1px $accentcolor;
+          padding: 20px 0;
+          text-align: center;
+        }
+      }
+      .cakes__left-quote {
+        position: relative;
+        &:before {
+          content: "\e977";
+          font-family: "icomoon";
+          position: absolute;
+          color: #b6b5b2;
+          
+          top: -10px;
+          left: 0px;
+          font-size: 16px;
+        }
+        &::after {
+          content: "\e978";
+          font-family: "icomoon";
+          position: absolute;
+          color: #b6b5b2;
+          bottom: -10px;
+          right: 0px;
+          font-size: 16px;
+        }
+      }
+    }
+    
+      
+    }
+    .cakes__right {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      align-items: center;
+      
+    
+      &-flour {
+        width: 312px;
+        height: 265px;
+        outline: solid 4px white;
+        outline-offset: -19px;
+        padding: 8px;
+      }
+      &-egs {
+        width: 312px;
+        height: 265px;
+        outline: solid 4px white;
+        outline-offset: -19px;
+        padding: 8px;
+      }
+      &-chocolate {
+        width: 312px;
+        height: 265px;
+        outline: solid 4px white;
+        outline-offset: -19px;
+        padding: 8px;
+      }
+      &-Strawberry {
+        width: 312px;
+        height: 265px;
+        outline: solid 4px white;
+        outline-offset: -19px;
+        padding: 8px;
+      }
+      .cakes__label-wrapper {
+          position: absolute;
+      }
+      .cakes__right-label {
+          align-items: center;
+          position: absolute;
+    
+          align-content: center;
+          top: 277px;
+          left: 137px;
+          
+    
+          .label {
+            position: absolute;
+            top: 126px;
+            opacity: 0.8;
+          }
+          .textlabel {
+            width: 154px;
+            height: 140px;
+            position: absolute;
+            word-wrap: break-word;
+            left: 8vh;
+            top: 26vh;
+            font-family: $fontheadings;
+            font-size: 30px;
+            line-height: 30px;
+            letter-spacing: 0.5;
+            color: #cc9966;
+            text-align: center;
+          }
+        }
+        }
+      }
+    
+  
+  
+  @media only screen and (max-width: 800px) {
+    .header {
+      &::after {
+        left: 43%;
+      }
+    }
+    .header__top {
+      &__logo {
+        a {
+          font-size: 13px;
+        }
+      }
+  
+      &__menu {
+        ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          li {
+            &:first-child,
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+              &::after {
+                content: "";
+              }
+            }
+  
+            a {
+              font-size: 8px;
+            }
+          }
+        }
+      }
+      &__items {
+        .icon-twitter {
+          &::before {
+            font-size: 8px;
+  
+            right: 48px;
+          }
+        }
+        .icon-facebook {
+          &::before {
+            font-size: 8px;
+  
+            right: 24px;
+          }
+        }
+  
+        .icon-instagram {
+          &::before {
+            font-size: 8px;
+  
+            right: 0px;
+          }
+        }
+      }
+    }
+    .header__bottom {
+      .header__bottom__name {
+        padding-bottom: 20px;
+  
+        h1 {
+          font-size: 43px;
+        }
+      }
+  
+      .header__bottom__text {
+        p {
+          font-size: 12px;
+  
+          max-width: 275px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .header {
+      &::after {
+        left: 39%;
+      }
+    }
+    .header__bottom {
+      .header__bottom__name {
+        h1 {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+  
